@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+
+</head>
+<style>
+    .selected{
+        background-color: gray;
+    }
+</style>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="logo H2PROG" style="width:100px;float:left" onclick="clicSurImage()"/>
+        <nav style="float:left">
+            <ul>
+                <li style="display:inline"><a href="index.html">Accueil</a></li>
+                <li style="display:inline"><a href="page1.html">Page 1</a></li>
+                <li style="display:inline"><a href="page2.html">Page 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="clear:both">
+        <h1 style="text-align: center;">Site de présentation du DOM</h1>
+        <div class="border p1 m1">
+            <div id="partie1" class="partie">
+                <h2>Partie 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam modi inventore sit repellat cupiditate recusandae, 
+                    odio excepturi consequuntur sed qui voluptates animi voluptatum, facere hic officiis totam? Reprehenderit, dignissimos?</p>
+            </div>
+            <div id="partie2" class="partie">
+                <h2>Partie 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam modi inventore sit repellat cupiditate recusandae, 
+                    odio excepturi consequuntur sed qui voluptates animi voluptatum, facere hic officiis totam? Reprehenderit, dignissimos?</p>
+            </div>
+            <div id="partie3" class="partie">
+                <h2>Partie 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam modi inventore sit repellat cupiditate recusandae, 
+                    odio excepturi consequuntur sed qui voluptates animi voluptatum, facere hic officiis totam? Reprehenderit, dignissimos?</p>
+            </div>
+        </div>
+        <form>
+            <label>Nom</label>
+            <input type="text" name="nom" onfocus="changerBg(this)" onblur="elementBlur(this)"  id="inp1"/>
+            <label>Prenom</label>
+            <input type="text" name="prenom" onfocus="changerBg(this)" onblur="elementBlur(this)" id="inp2"/>
+            <br />
+            <label>Niveau d'étude</label>
+            <select name="niveau" onchange="selection()">
+                <option value=""></option>
+                <option value="BEP" >BEP</option>
+                <option value="CAP" >CAP</option>
+                <option value="BAC" >BAC</option>
+            </select>
+            <span id="verif" style="display: none;"></span>
+            <br />
+            <input type="submit" value="Valider" />
+        </form>
+    </main>
+    <footer style="background-color: #283645;color:white; text-align: center;padding:10px;">
+        &#169; H2PROG 2021
+    </footer>
+</body>
+</html>

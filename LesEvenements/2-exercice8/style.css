@@ -1,0 +1,9 @@
+.border{
+    border:2px solid black;
+    border-radius: 0.5em;
+}
+.p1{padding:10px;}
+.m1{margin:10px;}
+.partie h2{color:red;}
+.bg-green{background-color: greenyellow};
+.selected{background : lightslategray};
